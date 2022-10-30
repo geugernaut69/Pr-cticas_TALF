@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\graphicspath{ {/home/user/Imágenes/} }
+
+\title{Práctica1}
+\author{Enrique Narbona Luque}
+\date{October 2022}
+
+\begin{document}
+
+\maketitle
+
+\LARGE
+\titl\underline{Actividades}
+
+\normalsize
+\RaggedRight
+
+\textbf{2. Within the folder “files”, find a TEX file in whose content appears the string \usepackage{amsthm, amsmath}. Note: use grep and escape the special characters with \. Complete the proof and answer the question.}
+
+\vspace{5mm}
+
+{Lo primero que vamos a hacer es buscar los archivos mediante el comando grep "\usepackage{amsthm, amsmath}" ./*}
+
+\vspace{4mm}
+
+Como podemos observar este script nos ha devuelto el archivo, el cual contiene escrito lo que hemos especificado en el comando.
+
+\vspace{4mm}
+
+Si abrimos dicho archivo, mainP.tex, podremos ver que, efectivamente, este contiene la cadena \backslash usepackage\{amsthm, amsmath\}.
+
+\vspace{4mm}
+
+Además, podemos ver que al final de este archivo, se nos pide completar el último apartado:
+
+\vspace{4mm}
+
+\textbf{Consideremos $L=\{w\in \{a,b\}^* : w \textnormal{ no termina en } ab\}$. Una expresión regular que genera L es:}
+
+\begin{equation}
+    L(a^{\ast} + b^{\ast}a) =\{a,aa,aba,abba,ba,bba...\}
+\end{equation}
+
+\end{document}
